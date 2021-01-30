@@ -33,7 +33,8 @@ export default function About() {
         onClick={() =>
           store.dispatch({
             type: "decrement",
-          })}
+          })
+        }
       >
         decrement
       </button>

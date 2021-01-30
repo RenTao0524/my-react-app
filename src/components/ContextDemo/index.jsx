@@ -17,7 +17,7 @@ class ContextDemo extends React.Component {
   }
 }
 
-function Toolbar(props) {
+function Toolbar() {
   return (
     <div>
       <ThemedButton />

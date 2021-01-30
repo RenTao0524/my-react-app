@@ -1,24 +1,26 @@
 module.exports = {
   env: {
-    browser: true,
-    es2021: true,
+    browser: true
   },
-  // parser: "babel-eslint",
-  extends: [
-    'react-app',
-  ],
+  parser: "babel-eslint",
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: 12,
+    ecmaVersion: 6,
     sourceType: 'module',
   },
+  extends: [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:react-hooks/recommended"
+  ],
   plugins: [
-    'react-hooks',
     "prettier"
   ],
   rules: {
+    "prettier/prettier": "error",
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-  },
-};
+  }
+}

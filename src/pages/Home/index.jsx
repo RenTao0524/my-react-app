@@ -23,5 +23,6 @@ export default function Home(props) {
       >
         increment
       </button>
-  </div>)
+    </div>
+  );
 }

@@ -6,9 +6,10 @@ export const MyContext = React.createContext(null);
 
 export default function ContextContainer(props) {
   const [state, dispatch] = useReducer(reducer, initialState);
+  const { children } = props || {};
   return (
     <MyContext.Provider value={{ state, dispatch }}>
-      {props.children}
+      {children}
     </MyContext.Provider>
   );
 }
